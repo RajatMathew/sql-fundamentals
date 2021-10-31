@@ -37,3 +37,19 @@ In the last line, we specify another condition with “on delete cascade” phra
 show tables;
 ```
 The retail database contains two tables now. We can view the tables exist in a database using the show tables command.
+
+## Decribe a table's schema
+```
+desc orders;
+```
+
+The desc or describe commands provide an overview of the table in terms of column names, data types, and some additional information.
+
+## Modify a table's schema
+```
+alter table orders add is_sale varchar(20);
+```
+
+We can modify existing tables. For instance, the alter table command can be used to add a new column or delete an existing column.
+Let’s add a column to the orders table called “is_sale”.
+
