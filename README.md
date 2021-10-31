@@ -32,4 +32,8 @@ The cust_id column in the orders table is a foreign key and related the orders t
   
 In the last line, we specify another condition with “on delete cascade” phrase. It tells MySQL what to do when a row in the customer table is deleted. Each row in the orders table belongs to a customer. Each row in the customer table contains a unique customer id and represents a customer. If a row in the customer table is removed, it means we do not have that customer any more. As a result, the orders that belonged to that customer do not have an associated customer id anymore. “On delete cascade” indicates that orders that do not have an associated customer id will also be deleted.  
 
-
+## Displaying list of tables in a database
+```
+show tables;
+```
+The retail database contains two tables now. We can view the tables exist in a database using the show tables command.
