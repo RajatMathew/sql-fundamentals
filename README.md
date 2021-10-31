@@ -11,6 +11,7 @@ gender varchar(20)
 );
 ```
   
+We define the name of the columns and associated data types inside the parenthesis. The cust_id column is specified as the primary key. Primary key is the column that uniquely identifies each row. It is like the index of a pandas dataframe.
 
 ## Creating a table with foreign key  
   
