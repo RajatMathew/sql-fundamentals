@@ -2,19 +2,19 @@
 
 ## Creating a table
   
-``
+```
 create table customer (
 cust_id int primary key,
 age int,
 location varchar(20),
 gender varchar(20)
 );
-``
+```
   
 
 ## Creating a table with foreign key  
   
-`` 
+```
 create table orders (
 order_id int primary key,
 date date,
@@ -23,7 +23,7 @@ cust_id int,
 foreign key (cust_id) references customer(cust_id)
 on delete cascade
 );
-``
+```
   
 Foreign key is what relates a table to another one. Foreign key contains the primary key of another table.  
   
